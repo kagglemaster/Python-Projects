@@ -1,0 +1,18 @@
+This Python code implements a simple dice rolling game where the player rolls a dice and wins if they roll a six. If they roll a six, they have the option to quit the game. If they don't roll a six, they are given the option to try again or quit.
+
+Here's a breakdown of the code:
+
+1. **Welcome Message**: The program starts by displaying a welcome message using an f-string. The input function prompts the user to enter their name, which is then inserted into the welcome message.
+
+2. **Game Loop**: The `while True` loop ensures that the game continues until the player chooses to quit. Inside the loop:
+   - The player is prompted to press Enter to roll the dice.
+   - A random number between 1 and 6 is generated using `random.randint(1, 6)`.
+   - The generated number is printed.
+   
+3. **Checking for Win**: If the generated number is 6, the player wins. They are congratulated, and then prompted to decide whether they want to quit the game or continue playing.
+
+4. **Continuation**: If the player doesn't roll a six, they are informed and given the option to try again or quit. If they choose to try again, the loop continues. If they choose to quit, the game ends.
+
+5. **Game Over**: If the player chooses to quit at any point, the game prints "Thank you for playing" and exits the loop.
+
+This code provides a simple interactive game experience for the player to roll a dice and win by rolling a six.
