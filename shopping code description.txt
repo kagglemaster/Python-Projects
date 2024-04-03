@@ -1,0 +1,12 @@
+This Python code creates a simple shopping cart program. It continuously prompts the user to input items and their prices. After each input, the user is given the option to view the total amount by pressing 'b'. If 'b' is pressed, the program displays the list of items with their quantities and calculates the total amount. Finally, the program terminates.
+
+The code description can be summarized as follows:
+
+- Initializes an empty dictionary named `cart` to store items and their prices.
+- Enters an infinite loop to continuously prompt the user for input.
+- Asks the user to input an item and its price.
+- Adds the item and price to the `cart` dictionary using the `update()` method.
+- Asks the user if they want to view the total amount by pressing 'b' or continue adding items by pressing enter.
+- If the user chooses to view the total amount ('b' is pressed), the program displays the list of items with their quantities and calculates the total amount using the `sum()` function.
+- Prints the total amount and breaks the loop, terminating the program.
+- If the user chooses to continue adding items, the user presses enter and the loop continues.
