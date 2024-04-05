@@ -1,0 +1,29 @@
+This Python script simulates a basic ordering system for a cafe. Here's a breakdown of the code:
+
+1. **Welcome Message and Menu Display**: 
+   - The script starts by printing a welcome message and then displays the menu with corresponding prices using a dictionary named `menu`.
+
+2. **Ordering Process**: 
+   - It initiates an empty list named `order` to store the items the customer orders.
+   - It enters a `while` loop to continuously prompt the user to enter the items they want to order. 
+   - If the entered item is valid (present in the menu), it's added to the `order` list.
+   - After each item is added, the user is asked if they want to add another item. If yes, the process repeats; if not, the loop breaks.
+
+3. **Calculating Total Bill**: 
+   - It calculates the total bill by iterating over the `order` list and summing up the prices of the ordered items from the `menu` dictionary.
+
+4. **Printing Order Summary and Total Bill**: 
+   - It prints the order summary and total bill.
+
+5. **Writing to File**: 
+   - It appends the order details (item and price) to a file named "sales.txt".
+  
+  Further detailed description of specific parts of the code:
+
+- `for item,price in menu.items():` iterates over the `menu` dictionary to print each item and its corresponding price neatly aligned.
+- `while True:` initiates an infinite loop for the order process.
+- `if reorder.lower() == "no":` checks if the user doesn't want to add more items to the order.
+- `for i in range(len(order)): pay = menu[order[i]]` calculates the total bill by fetching the price of each item from the `menu` dictionary.
+- `with open("sales.txt", "a") as f:` opens the file "sales.txt" in append mode, allowing the script to write the order details into the file.
+
+Overall, this script provides a simple interface for a user to order items from a cafe menu, calculates the total bill, and records the order details into a file for sales tracking.
