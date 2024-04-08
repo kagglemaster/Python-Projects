@@ -1,0 +1,19 @@
+This Python code utilizes the `tkinter` library to create a simple graphical user interface (GUI) application for a fictional travel agency called "ABC Travels." Here's a breakdown of what the code does:
+
+1. It imports everything (*) from the tkinter library, which is a standard GUI (Graphical User Interface) toolkit in Python.
+
+2. It creates the main window of the application (`root`) with a fixed size of 550x300 pixels and sets its title to "ABC Travels."
+
+3. It creates labels (`Label` widgets) to display instructions and prompts for the user to fill out a form. These labels include "First Name," "Last Name," "Phone Number," and "Address."
+
+4. It creates entry fields (`Entry` widgets) for the user to input their first name, last name, phone number, and address.
+
+5. It creates a checkbox (`Checkbutton` widget) labeled "Want to pre-book your meal?" to allow the user to indicate if they want to pre-book their meal.
+
+6. It defines a function `submit()` that will be called when the user clicks the "Submit" button. Currently, it just prints "Thanks for Booking!" to the console.
+
+7. It creates a "Submit" button (`Button` widget) which, when clicked, will trigger the `submit()` function.
+
+8. Finally, it starts the GUI event loop with `root.mainloop()`, which keeps the window running and responsive to user interactions until it's closed.
+
+In summary, this code sets up a basic form for users to input their information for booking travel services, with an option to pre-book meals, and provides a button to submit the form.
