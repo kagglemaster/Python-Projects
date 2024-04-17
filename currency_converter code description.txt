@@ -1,0 +1,17 @@
+This code reads currency exchange rates from a file named "currencyrates.txt" and then converts an input amount from PKR (Pakistani Rupees) to the specified currency. Here's what each part of the code does:
+
+1. It opens the file "currencyrates.txt" and reads its contents into the variable `lines`.
+2. It prompts the user to input the amount in PKR that they want to convert.
+3. It initializes an empty dictionary `dic` to store currency conversion rates.
+4. It iterates through each line in the file `lines`.
+   - It splits each line into words.
+   - It combines the first two words to form the currency name.
+   - It takes the last word as the conversion rate.
+   - It creates a list `result_list` containing the currency name and its conversion rate.
+   - It prints the currency name.
+   - It updates the dictionary `dic` with the currency name as the key and its conversion rate as the value.
+5. It prompts the user to input the desired currency for conversion, capitalizing the first letter of each word in the input.
+6. It attempts to convert the amount using the entered currency's conversion rate and prints the result.
+   - If the entered currency is not found in the dictionary, it raises a KeyError, and the code prints an error message instead.
+
+The code essentially handles currency conversion from PKR to another currency based on the rates provided in the "currencyrates.txt" file, with error handling for cases where the entered currency is not found.
