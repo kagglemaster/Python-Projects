@@ -1,0 +1,25 @@
+This Python code defines a simple to-do list class called `to_do_list`. Here's a breakdown of the code:
+
+1. **Class Definition (`to_do_list`)**:
+    - It contains methods to add, remove, update, and view tasks in the to-do list.
+
+2. **Constructor (`__init__`)**:
+    - Initializes an empty list (`self.lst`) to store tasks when an object of `to_do_list` is created.
+
+3. **Method `add`**:
+    - Adds a task to the to-do list by appending it to `self.lst`.
+
+4. **Method `remove`**:
+    - Removes a task from the to-do list if it exists. If the task is not found, it returns a message indicating that.
+
+5. **Method `view_all_tasks`**:
+    - Displays all the tasks in the to-do list if it's not empty. If it's empty, it notifies the user.
+
+6. **Method `update_task`**:
+    - Updates a task in the to-do list. It replaces the old task with the new one if the old task exists; otherwise, it returns a message indicating that the old task was not found.
+
+7. **Main Program**:
+    - Creates an instance of `to_do_list` called `my_list`.
+    - Runs an infinite loop to continuously prompt the user for options.
+    - The user can choose to add, update, remove, view tasks, or exit the program.
+    - Depending on the user's input, it calls the corresponding method of the `to_do_list` object (`my_list`) and displays appropriate messages.
